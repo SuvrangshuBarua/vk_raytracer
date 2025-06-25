@@ -1,4 +1,7 @@
 
+# vk_raytracer is an extension of this tutorial series -> [Ray Tracing Tutorial](https://nvpro-samples.github.io/vk_raytracing_tutorial_KHR/vkrt_tutorial.md.html)
+
+
 # Environment Setup
 
 
@@ -12,7 +15,7 @@ Cloning all repositories
 
 ~~~~~
 git clone --recursive --shallow-submodules https://github.com/nvpro-samples/nvpro_core.git
-git clone https://github.com/nvpro-samples/vk_raytracing_tutorial_KHR.git
+git clone https://github.com/SuvrangshuBarua/vk_raytracer.git
 ~~~~~
 
 The directory structure should be looking like this:
@@ -21,9 +24,8 @@ The directory structure should be looking like this:
    C:\Vulkan\nvpro-samples
    | 
    +---nvpro_core
-   +---vk_raytracing_tutorial_KHR
-   |   +---ray_tracing__simple
-   |   +---ray_tracing_...
+   +---vk_raytracer
+   |   +---ray_tracing_final
    |   \---...   
 ~~~~
 
@@ -48,18 +50,9 @@ NVIDIA driver 450.0 and up support Vulkan ray tracing.
 ## CMake
 
 The CMakefile will use other makefiles from `nvpro_core` and look for Vulkan environment variables for the installation of the SDK. Therefore, it is important to have all the above installed before running Cmake in the 
-`vk_raytracing_tutorial_KHR` directory.
+`vk_raytracer` directory.
 
 **Note:** Ray tracing only works with 64 bit environment. Therefore, make sure to choose the right build environment.
 
 **Note:** If you are using your own Vulkan header files, it is possible to overide the default search path.
   Modify `VULKAN > VULKAN_HEADERS_OVERRIDE_INCLUDE_DIR` to the path to beta vulkan headers.
-
-## Starting From Extra Tutorial
-
-All _extra_ tutorials are starting from the end result of the _first tutorial_. The directory of the _extra_ tutorials is the end result of doing it. 
-
-To start the tutorial from the begining.
-
-* Make a copy of the ray_tutorial__simple (backup)
-* Follow the tutorial by modifying ray_tutorial__simple
