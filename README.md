@@ -1,6 +1,7 @@
 
 # vk_raytracer is an extension of this tutorial series -> [Ray Tracing Tutorial](https://nvpro-samples.github.io/vk_raytracing_tutorial_KHR/vkrt_tutorial.md.html)
 
+![final_render](docs/Images/Screenshot_11.png)
 
 # Environment Setup
 
